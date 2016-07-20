@@ -19,11 +19,11 @@ social:
 # nav #
 nav:
   blog: /
-  portfolio: http://lauramk.me/home/#portfolio
+  portfolio: http://lauramk.me/#portfolio
   about: about
-  skills: http://lauramk.me/home/#skills
-  contact: http://lauramk.me/home/#contact
-  website: http://lauramk.me/home
+  skills: http://lauramk.me/#skills
+  contact: http://lauramk.me/#contact
+  website: http://lauramk.me/
 
 # nav underneath header #
 nav2:
