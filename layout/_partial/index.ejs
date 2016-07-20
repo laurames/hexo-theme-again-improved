@@ -1,0 +1,41 @@
+<main class="index">
+  <h5 class="index-headline featured"><span>Featured</span></h5>
+  <% site.categories.findOne({'name': 'featured'}).posts.each(function(post) { %>
+    <article>
+      <h1 class="article-title">
+        <a href="<%- url_for(post.path) %>"><%- post.title %></a>
+      </h1>
+
+      <div class="article-entry">
+        <%= post.description %>
+      </div>
+
+      <div class="article-meta">
+        <span class="article-date"><%- date(post.date, 'DD MMM YYYY') %></span>
+        <br><span><span class="glyphicon glyphicon-tags"></span> Tags: <%- partial('article-tags', {item: post}) %></span>
+      </div>
+    </article>
+  <% }) %>
+
+  <h5 class="index-headline normal"><span>Latest</span></h5>
+
+  <% page.posts.each(function(post){ %>
+    <article>
+      <h1 class="article-title">
+        <a href="<%- url_for(post.path) %>"><%- post.title %></a>
+      </h1>
+
+      <div class="article-entry">
+        <%= post.description %>
+      </div>
+
+      <div class="article-meta">
+        <span class="article-date"><%- date(post.date, 'DD MMM YYYY') %></span>
+        <br><span><span class="glyphicon glyphicon-tags"></span> Tags: <%- partial('article-tags', {item: post}) %>
+        </span>
+      </div>
+    </article>
+  <% }) %>
+
+  <%- partial('../_widget/paginator') %>
+</main>

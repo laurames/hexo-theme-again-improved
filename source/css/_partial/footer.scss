@@ -1,0 +1,37 @@
+.app-footer {
+  height: $app-footer-height;
+  padding: $gutter;
+
+  text-align: center;
+  color: $app-footer-color;
+  font-size: 0.75rem; //12px
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  color: #999999;
+  line-height: 17.6px;
+
+  i{
+    font-size: 0.875rem; //14px
+  }
+
+  p {
+    margin: 0;
+    padding: $gutter / 5;
+    font-style: italic;
+  }
+
+  a {
+    color: $app-subtitle-color;
+  }
+  //
+  // social list
+  //
+  .social-list {
+    margin: 0;
+    margin: $gutter 0;
+    padding: 0;
+    list-style: none;
+  }
+}

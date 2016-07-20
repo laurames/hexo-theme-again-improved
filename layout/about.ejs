@@ -1,0 +1,15 @@
+<article>
+  <h1 class="article-title">
+    <a href="<%- url_for(page.path) %>"><%- page.title %></a>
+  </h1>
+
+  <div class="post-meta-text">
+    <div class="author-image" style="background-image: url(<%- url_for(theme.avatar) %>)"></div>
+    <h6 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"><%- theme.author %></h6> <span class="spanGray">on</span>
+    <time datetime="<%- date(page.date, 'MMMM DD YYYY') %>"><%- date(page.date, 'MMMM DD YYYY') %></time>
+  </div>
+
+  <section class="article-entry">
+    <%- page.content %>
+  </section>
+</article>

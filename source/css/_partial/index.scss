@@ -1,0 +1,72 @@
+main.index {
+  max-width: $main-content-width;
+  margin: 0 auto;
+  padding: $gutter;
+
+  .index-headline {
+    border-top: 1px solid #dededc;
+    margin: 0;
+    padding: 16px 0;
+    span {
+      color: #b3b3b1;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  article {
+    // border-top: 1px solid $article-border-color;
+    margin-bottom: $article-gutter / 2;
+  }
+
+  .article-entry {
+    padding: 0.5rem 0;
+    font-size: 0.875rem;//14px
+    color: $app-subtitle-color;
+  }
+
+  .article-title {
+    margin: 0;
+    text-transform: capitalize;
+
+    font-family: $font-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    font-size: $app-subtitle-font-size;
+    line-height: 1.1;
+    margin: 0 0;
+    color: #333332;
+  }
+  .article-meta{
+    font-size: 0.875rem;
+    color: #b3b3b1;
+    line-height: 30px;
+  }
+
+  .article-date {
+    color: $article-date-color;
+  }
+
+  .page-nav {
+    text-align: center;
+    margin-top: $article-gutter;
+    font-size: $page-nav-font-size;
+
+    .page-number {
+      padding: $gutter / 3;
+      color: $anchor-color;
+    }
+    .current {
+      // color: $page-nav-current-page;
+      color: inherit;
+    }
+
+    .extend {
+      padding: 0 $gutter;
+      color: $anchor-color;
+    }
+  }
+}

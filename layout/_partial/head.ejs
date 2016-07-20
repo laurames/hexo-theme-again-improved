@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><% if (page.title){ %><%= page.title %> | <% } %><%= theme.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="<%= theme.subtitle %>" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="<%= theme.title %>">
+  <meta name="twitter:description" content="<%= theme.subtitle %>">
+  <meta name="twitter:site" content="@FuzzyPorridge">
+  <meta name="twitter:creator" content="@FuzzyPorridge">
+  <meta name="google-site-verification" content="l_MSD5pfbVXWbb1aBH7BHiy-0i7jpcerQB87aYUmpZ8" />
+  <meta property="fb:admins" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="<%= theme.title %>">
+  <meta property="og:description" content="<%= theme.subtitle %>">
+
+  <link rel="shortcut icon" href="<%- url_for(theme.favicon) %>">
+  <!--Font awesome-->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Yeseva+One|Merriweather+Sans:300,400|Merriweather:400,700|Inconsolata:400" rel="stylesheet" type="text/css">
+  <%- css('css/app') %>
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+  //navigation to mobile:
+  $(document).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+      if ($("nav#nav-mobile ul").hasClass("expanded")) {
+        $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+        $(this).removeClass("open");
+      } else {
+        $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+        $(this).addClass("open");
+      }
+    });
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+  });
+  </script>
+</head>

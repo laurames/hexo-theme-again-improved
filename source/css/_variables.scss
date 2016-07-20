@@ -1,0 +1,71 @@
+//
+// base
+//
+$bg-color: #eee;
+$body-bg-color: #FCFCFC;
+$main-font-color: #333333;
+$main-content-width: 700px;
+$gutter: 15px;
+
+$root-font-size: 16px;
+$body-font-size: 1rem;
+
+
+//
+// header
+//
+$banner-height: 450px;
+$avatar-size: 120px;
+$app-title-font-size: 3.125rem; //50px
+
+$avatar-border-color: #fff;
+$app-title-color: #333333;
+$app-subtitle-color: #666666;
+$app-subtitle-font-size: 1.75rem; //28px
+
+
+//
+// archive
+//
+$archive-main-width: 500px;
+$archive-gutter: 2 * $gutter;
+$page-nav-font-size: 1.25rem;
+
+//
+// article
+//
+$article-line-height: 1.7;
+$article-date-color: #aaa;
+$article-gutter: 2.666 * $gutter;
+$anchor-color: #42d29d;
+
+//
+// sharing
+//
+$sharing-border-color: #ddd;
+$sharing-avatar-size: 70px;
+$sharing-subtitle-color: #999;
+$sharing-statement-color: #EB298C;
+
+//
+// footer
+//
+$app-footer-height: 80px;
+$app-footer-color: #999999;
+$app-footer-bg: #abcdef;
+
+//
+//fonts
+//
+$font-sans: 'Merriweather Sans', Helvetica, sans-serif;
+$font-serif: 'Merriweather', Times New Roman, serif;
+$font-mono: "Source Code Pro", Consolas, Monaco, Menlo, monospace;
+$font-titles: 'Yeseva One', Georgia, serif;
+
+//
+// markdown highlight
+//
+$code-bg-color: rgba(0,0,0,0.07);;
+$quote-border-color: #aaa;
+$quote-color: #aaa;
+$code-block-linehight: 1.25 * $root-font-size

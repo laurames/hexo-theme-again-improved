@@ -1,0 +1,16 @@
+<header class="app-header">
+  <section class="banner">
+    <!-- http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/ -->
+    <div class="placeholder teaserimage-image">Teaser Image</div>
+  </section>
+
+  <section class="description">
+    <img class="avatar" src="<%- url_for(theme.avatar) %>" alt="avatar" />
+    <h1 class="title"> <%- theme.title %> </h1>
+    <h3 class="subtitle"> <%- theme.subtitle %> </h3>
+  </section>
+
+  <div class="blogNav">
+    <a href="<%- url_for(theme.nav2.about) %>">About me</a>
+  </div>
+</header>

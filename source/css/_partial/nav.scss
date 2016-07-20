@@ -1,0 +1,123 @@
+.logo-readium {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: black;
+  overflow: hidden;
+  z-index: 99;
+  .logo {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+#nav-trigger {
+  display: none;
+  text-align: center;
+}
+#nav-trigger span {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #35ac80;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+#nav-trigger span:hover {
+  background-color: #ff7755;
+}
+.app-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 14px;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li, a {
+    padding: 6px 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    line-height: 20px;
+  }
+  a:hover, a:focus {
+    outline: 0;
+    color: #ff7755;
+  }
+  .active {
+    background-color: $anchor-color;
+    color: #fff;
+  }
+}
+nav#nav-mobile {
+  position: relative;
+  display: none;
+}
+nav#nav-mobile ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+  border: 5px solid #35ac80;
+}
+nav#nav-mobile li {
+  display: block;
+}
+nav#nav-mobile a {
+  display: block;
+  color: black;
+  padding: 10px 30px;
+}
+nav#nav-mobile a:hover {
+  background-color: #ff7755;
+  color: #fff;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 900px) {
+  #nav-trigger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    margin: 15px;
+  }
+
+  nav#nav-main {
+    display: none;
+  }
+
+  nav#nav-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 300px;
+    height: auto;
+    margin-top: 55px;
+    margin-right: 15px;
+    z-index: 10;
+  }
+}

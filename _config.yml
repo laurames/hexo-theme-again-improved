@@ -1,0 +1,38 @@
+# basic
+title: Me in My Night Studio
+subtitle: The projects that i've done, planning on doing and all in between
+favicon: favicon.ico
+
+avatar: images/me.png
+banner_small: images/banner-small.png
+banner_large: images/banner-large.png
+
+# disqus
+disqus_shortname: lauramk
+
+# social
+social:
+  github: https://github.com/laurames
+  twitter: https://twitter.com/fuzzyporridge
+  behance: https://www.behance.net/lauramk/
+
+# nav #
+nav:
+  blog: /
+  portfolio: http://lauramk.me/home/#portfolio
+  about: about
+  skills: http://lauramk.me/home/#skills
+  contact: http://lauramk.me/home/#contact
+  website: http://lauramk.me/home
+
+# nav underneath header #
+nav2:
+  archive: archives
+  about: about
+  rss: atom.xml
+
+# heox-renderre-sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false

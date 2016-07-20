@@ -1,0 +1,103 @@
+.app-header {
+  text-align: center;
+  //
+  // banner
+  //
+  .banner {
+    z-index: -1024;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    border-bottom: 3px solid #fff;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+
+    // http://daverupert.com/2015/12/intrinsic-placeholders-with-picture
+    .placeholder {
+      padding-bottom: 33.3%;
+
+      background-image: url("../images/studio.jpeg");
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      text-indent: -9999px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 2s linear;
+    }
+
+    img.loaded {
+      opacity: 1;
+    }
+
+    .banner-small {
+      filter: blur(50px);
+      -webkit-filter: blur(25px);
+    }
+  }
+
+  //
+  // description
+  //
+  .description .avatar {
+    /*width: $avatar-size;
+    height: $avatar-size;
+    margin-top: -$avatar-size / 2;
+    border-radius: 50%;
+    border: 4px solid $avatar-border-color;*/
+
+    width: $avatar-size;
+    height: $avatar-size;
+    margin-top: -$avatar-size / 2;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 99;
+    text-indent: -9999px;
+    border: 3px solid #fff;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .description .title {
+    font-size: $app-title-font-size;
+    line-height: $app-title-font-size;
+    font-weight: 700;
+    letter-spacing: -2px;
+    word-break: break-word;
+    outline: 0;
+    color: $app-title-color;
+    font-family: $font-titles;
+    margin: 0;
+    padding: $gutter;
+  }
+
+  .description .subtitle {
+    margin: 0;
+    font-size: 1.125rem; //18px
+    color: $app-subtitle-color;
+    padding-bottom: $gutter;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .social-list a {
+    color: $anchor-color;
+    padding: 8px 12px;
+  }
+}

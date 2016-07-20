@@ -1,0 +1,13 @@
+<a href="<%- url_for(theme.nav.blog) %>" class="logo-readium"><span class="logo"></span></a>
+<nav class="app-nav" id="nav-main">
+  <ul>
+  <% var first = true
+    for (var i in theme.nav){ %>
+      <li><a href="<%- url_for(theme.nav[i]) %>"><%= i %></a><li>
+  <% } %>
+  </ul>
+</nav>
+<div id="nav-trigger">
+    <span>Menu</span>
+</div>
+<nav id="nav-mobile"></nav>

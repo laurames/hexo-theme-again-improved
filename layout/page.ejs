@@ -1,0 +1,12 @@
+<% if (page.title == "about Me"){ %>
+  <main class="post other">
+    <%- partial('_partial/nav') %>
+    <%- partial('about') %>
+    <%- partial('_partial/footerOther') %>
+  <% } else{ %>
+  <main class="page">
+  <div>
+    <%- page.content %>
+  </div>
+  <% } %>
+</main>
