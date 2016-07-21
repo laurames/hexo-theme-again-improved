@@ -6,21 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="<%= theme.subtitle %>" />
-
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@FuzzyPorridge">
   <meta name="twitter:title" content="<%= theme.title %>">
   <meta name="twitter:description" content="<%= theme.subtitle %>">
-  <meta name="twitter:site" content="@FuzzyPorridge">
   <meta name="twitter:creator" content="@FuzzyPorridge">
+  <meta name="twitter:image" content="http://www.lauramk.me/img/portrait.jpg">
+
+  <meta property="og:title" content="<%= theme.title %>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%- url_for(theme.url) %>" />
+  <meta property="og:image" content="http://www.lauramk.me/img/portrait.jpg" />
+  <meta property="og:site_name" content="<%= theme.title %>" />
+  <meta property="og:description" content="<%= theme.subtitle %>" />
+  <meta property="fb:admins" content="" />
+
   <meta name="google-site-verification" content="l_MSD5pfbVXWbb1aBH7BHiy-0i7jpcerQB87aYUmpZ8" />
-  <meta property="fb:admins" content="">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="<%= theme.title %>">
-  <meta property="og:description" content="<%= theme.subtitle %>">
 
   <link rel="shortcut icon" href="<%- url_for(theme.favicon) %>">
   <!--Font awesome-->
